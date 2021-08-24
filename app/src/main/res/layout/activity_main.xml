@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_colour"
+    tools:context=".MainActivity"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idrvchats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/idrlmsg" />
+
+    <RelativeLayout
+        android:id="@+id/idrlmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/idedtmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter message"
+            android:textColor="#FFFFFF"
+            android:layout_toLeftOf="@+id/idfabsend"
+            android:textColorHint="#FFFFFF"
+            android:singleLine="true"
+            android:layout_margin="3dp"
+            android:layout_centerInParent="true"
+            android:background="@color/back_colour"
+
+           />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="6dp"
+            android:background="@color/floatstarticon_colour"
+            android:src="@drawable/ic_baseline_send_24"
+            app:fabCustomSize="50dp"
+            app:tint="@color/white"
+            android:id="@+id/idfabsend" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+

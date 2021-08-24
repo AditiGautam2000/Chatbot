@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#013B8A</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="back_colour">#13253D</color>
+    <color name="user_colour">#6965FF</color>
+    <color name="bot_colour">#203757</color>
+    <color name="floatstarticon_colour">#6B6AFF</color>
+</resources>
